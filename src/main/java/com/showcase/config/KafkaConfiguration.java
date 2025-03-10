@@ -15,7 +15,7 @@ import org.springframework.kafka.support.serializer.JsonDeserializer;
 import java.util.Map;
 
 @Configuration
-public class KafkaMessagingConfiguration {
+public class KafkaConfiguration {
 
     private static final String TRUSTED_EVENT_PACKAGE = "com.showcase.*";
 

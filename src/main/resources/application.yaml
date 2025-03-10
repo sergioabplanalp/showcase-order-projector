@@ -1,6 +1,7 @@
 spring:
   application:
     name: order-projector
+
   data:
     mongodb:
       host: localhost
@@ -11,3 +12,6 @@ messaging:
     bootstrapServers: localhost:9092
     topic: order.events
     groupId: order-projector-consumer
+
+server:
+  port: 8080
