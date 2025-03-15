@@ -12,6 +12,10 @@ messaging:
     bootstrapServers: localhost:9092
     topic: order.events
     groupId: order-projector-consumer
+  rabbitmq:
+    queueName: order.incoming.events
+    exchangeName: showcase.exchange
+    routingKey: inventory.events
 
 server:
   port: 8080
